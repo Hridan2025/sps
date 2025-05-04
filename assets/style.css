@@ -1,0 +1,341 @@
+body {
+  background: linear-gradient(135deg, #fff8f0, #ffe8d6);
+  font-family: Arial, sans-serif;
+}
+.logo {
+  font-weight: bold;
+  font-size: 2rem;
+  color: #f77f00;
+}
+.hero {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+}
+.hero-text h1 {
+  font-weight: 700;
+  font-size: 5rem;
+}
+.hero-text p {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+.btn-learn {
+  background-color: #f77f00;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+}
+.btn-learn:hover {
+  background-color: #e86c00;
+}
+.doctor-img {
+  width: 100%;
+  height: auto;
+  max-height: 600px;
+  object-fit: contain;
+}
+.care-badge {
+  position: relative;
+  top: -30px;
+}
+@media (max-width: 992px) {
+  .hero {
+    flex-direction: column;
+    padding-top: 20px;
+  }
+  .hero-text h1 {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+  .hero-text p {
+    text-align: center;
+  }
+  .hero-btns {
+    text-align: center;
+  }
+  .hero-img {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .logo {
+    text-align: center;
+    display: block;
+    margin-bottom: 1rem;
+  }
+  .doctor-img {
+    max-height: 300px;
+  }
+}
+@media (max-width: 576px) {
+  .hero-text h1 {
+    font-size: 1.8rem;
+  }
+  .doctor-img {
+    max-height: 250px;
+  }
+}
+
+.social-section {
+  background-color: white;
+  padding: 60px 0;
+}
+.social-img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+.social-heading {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #1b1b1b;
+}
+.social-text {
+  font-size: 1.05rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+@media (max-width: 768px) {
+  .social-heading {
+    text-align: center;
+  }
+  .social-text {
+    text-align: center;
+  }
+}
+
+.faq-section {
+  padding: 60px 0;
+}
+.faq-heading {
+  font-weight: 700;
+  font-size: 2rem;
+  color: #1b1b1b;
+  margin-bottom: 30px;
+}
+.faq-button {
+  background-color: #f77f00;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+}
+.faq-button:hover {
+  background-color: #e86c00;
+}
+.faq-img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-top: 2rem;
+}
+.accordion-button::after {
+  background-image: none;
+  font-weight: bold;
+  content: "+";
+  font-size: 1.2rem;
+}
+.accordion-button:not(.collapsed)::after {
+  content: "-";
+}
+.accordion-button {
+  font-weight: 700;
+  background: transparent;
+  box-shadow: none;
+  color: #1b1b1b;
+}
+.accordion-body {
+  color: #333;
+  font-size: 1rem;
+}
+@media (max-width: 768px) {
+  .faq-heading {
+    text-align: center;
+  }
+  .accordion-button {
+    text-align: left;
+  }
+  .faq-button {
+    display: block;
+    margin: 20px auto 0;
+  }
+}
+
+.specializations {
+  padding: 60px 0;
+  text-align: center;
+}
+.specializations h2 {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+.specializations p.subtitle {
+  color: #555;
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 0 auto 40px;
+}
+.spec-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  height: 100%;
+}
+.spec-icon {
+  background: #f77f00;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px;
+}
+.spec-icon img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  filter: invert(1);
+}
+.spec-card h4 {
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #1b1b1b;
+}
+.spec-card p {
+  color: #333;
+  font-size: 0.95rem;
+}
+.testimonials {
+  padding: 60px 0;
+  text-align: center;
+}
+.testimonials h2 {
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+.testimonials p.subtitle {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 40px;
+}
+.testimonial-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.stars {
+  color: #fbb034;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+.testimonial-text {
+  font-size: 0.95rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+.testimonial-author {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #1b1b1b;
+  margin-bottom: 3px;
+}
+.testimonial-role {
+  font-size: 0.85rem;
+  color: #777;
+}
+@media (max-width: 768px) {
+  .testimonials h2 {
+    font-size: 1.6rem;
+  }
+}
+.training-section {
+  padding: 60px 0;
+  text-align: center;
+}
+.training-section h2 {
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+.training-section p.subtitle {
+  color: #555;
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+.training-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.footer {
+  background-color: #8b0000;
+  color: #fff;
+  padding: 40px 0;
+  font-family: Arial, sans-serif;
+}
+.footer-logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff;
+}
+.footer-tagline {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #f5cba7;
+}
+.footer-text {
+  font-size: 0.95rem;
+  margin-top: 15px;
+  max-width: 400px;
+}
+.footer-links a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+}
+.footer-links a:hover {
+  text-decoration: underline;
+}
+.social-icons a {
+  color: #f77f00;
+  font-size: 1.2rem;
+  margin-right: 10px;
+}
+.footer-bottom {
+  font-size: 0.85rem;
+  color: #f5cba7;
+  margin-top: 20px;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .footer-text {
+    text-align: center;
+    margin: 15px auto;
+  }
+  .footer-links {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .social-icons {
+    justify-content: center;
+  }
+}
